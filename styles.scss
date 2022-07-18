@@ -1,0 +1,76 @@
+@font-face {
+    font-family:"Inter-Regular";
+    src: url(assets\fonts\Inter-Regular.ttf) format("truetype");
+}
+
+body{
+    font-family:"Inter-Regular";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero p{
+    color: #FF3998;
+}
+
+.sign-up{
+    border-color: #FF8139;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+
+.upsell{
+    background: linear-gradient(90deg, #f35195, #d9f14e);
+    padding: 50px 10px 20px 20px;
+}
+
+.press{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: 32px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-group{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.all-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.group{
+    margin: 10px;
+}
+
+.about-group h6, h4{
+    margin: 0;
+}
+
+.right-footer a{
+    text-decoration: none;
+    color: #555555;
+    margin: 10px 0;
+}
+
+.right-footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.bottom-footer{
+    color: #999999;
+}
