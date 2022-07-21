@@ -1,38 +1,98 @@
 @font-face {
-    font-family:"Inter-Regular";
-    src: url(assets\fonts\Inter-Regular.ttf) format("truetype");
+    font-family: "Inter-Regular";
+    src: url(assets/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(assets/fonts/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url(assets/fonts/Inter-ExtraBold.ttf) format("truetype");
+}
+
+$color-pink: #FF3998;
+$color-grey: #555555;
+$color-border: #FF8139;
+$color-mild-grey: #999999;
+
+%grey-line-height{
+    color: $color-grey;
+    line-height: 25px;
 }
 
 body{
     font-family:"Inter-Regular";
+    margin: 32px 0 32px 32px;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    padding-right: 10px;
 }
 
-.hero p{
-    color: #FF3998;
+.hero{
+    display: flex;
+    flex-direction: row;
+    margin: 110px 0 0 32px;
+}
+
+.hero-block h1{
+    font-family: "Inter-SemiBold";
+}
+
+.hero-block h3{
+    color: $color-pink;
+}
+
+.hero-text{
+    @extend %grey-line-height;
+}
+
+.graphic-img{
+    float: right;
+    width: 189.62px;
+    height: 278px;
 }
 
 .sign-up{
-    border-color: #FF8139;
+    border-color: $color-border;
     background-color: white;
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
 }
 
 .upsell{
-    background: linear-gradient(90deg, #f35195, #d9f14e);
-    padding: 50px 10px 20px 20px;
+    background-image: url(assets/background.svg);
+    padding: 50px 32px 20px 32px;
+    margin: 50px 0 10px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 0;
 }
 
 .press{
+    padding: 20px 0;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    margin: 32px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.showcase{
+    overflow: hidden;
+}
+
+.showcase{
+    p{
+        @extend %grey-line-height;
+    }
+    p a{
+        color: $color-grey;
+    }
 }
 
 .group{
@@ -42,8 +102,17 @@ header{
 
 .about-group{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-group img{
+    height: 22px;
+    margin: 0 5px;
+}
+
+.align-right{
+    text-align: right;
 }
 
 .all-group{
@@ -59,18 +128,54 @@ header{
     margin: 0;
 }
 
+.footer-upsell{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-upsell{
+    h1{
+        font-family: "Inter-ExtraBold";
+        font-size: 56px;
+    }
+    h3{
+        color: $color-pink;
+    }
+    img{
+        float: right;
+        display: flex;
+        align-self: flex-end;
+    }
+}
+
+.ftupsell-text p{
+    @extend %grey-line-height;
+}
+
 .right-footer a{
     text-decoration: none;
-    color: #555555;
+    color: $color-grey;
     margin: 10px 0;
+}
+
+.left-footer p{
+    color: $color-grey;
 }
 
 .right-footer{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
+    margin-top: 50px;
 }
 
 .bottom-footer{
-    color: #999999;
+    color: $color-mild-grey;
+    margin: 30px 0;
+}
+
+.social-media-icons img{
+    height: 18px;
 }

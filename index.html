@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atsiskaitymas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -17,33 +18,37 @@
         </div>
     </header>
     <section class="hero">
-        <p>LAUNCHING SOON</p>
-        <h1>An NFT like no other</h1>
-        <p> Don't miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
-        <button class="sign-up">Sign Up</button>
-        <img src="assets\graphic.svg" alt="graphic">
+        <div class="hero-block">
+            <h3>LAUNCHING SOON</h3>
+            <h1>An NFT like no other</h1>
+            <p class="hero-text"> Don't miss out on the 
+                release of our new NFT. Sign up below 
+                to receive updates when we go live.</p>
+            <button class="sign-up"><strong>Sign Up</strong></button>
+        </div>
+        <img src="assets\graphic.png" class="graphic-img" alt="graphic"/>
     </section>
     <section class="upsell">
         <h1>Free NFT for early birds</h1>
         <p>Sign up today and you'll get a free NFT when we launch.</p>
     </section>
     <section class="press">
-        <div class="pres-one">
+        <div class="press-one">
             <img src="assets\companies\1.svg" alt="companies-1">
         </div>
-        <div class="pres-two">
+        <div class="press-two">
             <img src="assets\companies\2.svg" alt="companies-2">
         </div>
-        <div class="pres-three">
+        <div class="press-three">
             <img src="assets\companies\3.svg" alt="companies-3">
         </div>
-        <div class="pres-five">
+        <div class="press-five">
             <img src="assets\companies\5.svg" alt="companies-5">
         </div>
     </section>
     <section class="showcase">
         <h1>LE Super Rare Auction</h1>
-        <p>We have released four limited edition NFTs early which can be bid on via OpenSea.</p>
+        <p>We have released four limited edition NFTs early which can be bid on via <a href="#">OpenSea.</a></p>
         <div class="all-group">
             <div class="group">
                 <div class="group-image">
@@ -51,11 +56,11 @@
                 </div>
                 <div class="about-group">
                     <h6>GLOOP SERIES</h6>
-                    <h6>TOP BID</h6>
+                    <h6 class="align-right">TOP BID</h6>
                     <h4>Purple Man</h4>
-                    <h4>2.99 ETH</h4>
+                    <h4 class="align-right"><img src="assets\eth.svg" alt="eth">2.99 ETH</h4>
                     <h6>#12983</h6>
-                    <h6>1 day left</h6>
+                    <h6 class="align-right">1 day left</h6>
                 </div>
             </div>
             <div class="group">
@@ -64,11 +69,11 @@
                 </div>
                 <div class="about-group">
                     <h6>GLOOP SERIES</h6>
-                    <h6>TOP BID</h6>
-                    <h4>Purple Man</h4>
-                    <h4>2.99 ETH</h4>
+                    <h6 class="align-right">TOP BID</h6>
+                    <h4>Beige</h4>
+                    <h4 class="align-right"><img src="assets\eth.svg" alt="eth">2.99 ETH</h4>
                     <h6>#12983</h6>
-                    <h6>1 day left</h6>
+                    <h6 class="align-right">1 day left</h6>
                 </div>
             </div>
             <div class="group">
@@ -77,11 +82,11 @@
                 </div>
                 <div class="about-group">
                     <h6>GLOOP SERIES</h6>
-                    <h6>TOP BID</h6>
-                    <h4>Purple Man</h4>
-                    <h4>2.99 ETH</h4>
+                    <h6 class="align-right">TOP BID</h6>
+                    <h4>Red Man</h4>
+                    <h4 class="align-right"><img src="assets\eth.svg" alt="eth">2.99 ETH</h4>
                     <h6>#12983</h6>
-                    <h6>1 day left</h6>
+                    <h6 class="align-right">1 day left</h6>
                 </div>
             </div>
             <div class="group">
@@ -90,21 +95,26 @@
                 </div>
                 <div class="about-group">
                     <h6>GLOOP SERIES</h6>
-                    <h6>TOP BID</h6>
-                    <h4>Purple Man</h4>
-                    <h4>2.99 ETH</h4>
+                    <h6 class="align-right">TOP BID</h6>
+                    <h4>Green</h4>
+                    <h4 class="align-right"><img src="assets\eth.svg" alt="eth">2.99 ETH</h4>
                     <h6>#12983</h6>
-                    <h6>1 day left</h6>
+                    <h6 class="align-right">1 day left</h6>
                 </div>
             </div>
         </div>
     </section>
+    <hr>
     <section class="footer-upsell">
-        <h1>An NFT like no other</h1>
-        <p>Don't miss out on the release of our new NFT. Sign up below to receive updates.</p>
-        <button class="sign-up">Sign Up</button>
+        <div class="ftupsell-text">
+            <h3>LAUNCHING SOON</h3>
+            <h1>An NFT like no other</h1>
+            <p>Don't miss out on the release of our new NFT. Sign up below to receive updates.</p>
+            <button class="sign-up"><strong>Sign Up</strong></button>
+        </div>
         <img src="assets\upsell-footer-image.svg" alt="upsell-footer-image">
     </section>
+    <hr>
     <footer>
         <div class="left-footer">
             <img src="assets\logo.svg" alt="logo">
@@ -142,7 +152,6 @@
         </div>
         <div class="bottom-footer">
             <p>© Copyright 2022 NFTlanding</p>
-
         </div>
     </footer>    
 </body>
