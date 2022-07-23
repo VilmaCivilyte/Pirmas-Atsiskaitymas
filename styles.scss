@@ -38,11 +38,16 @@ header{
     visibility: hidden;
 }
 
+.menu-btn{
+    border-style: none;
+    background-color: white;
+}
+
 .hero{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 110px 0 0 32px;
+    margin: 110px 0 0 0;
     flex: 1fr, 1fr;
 }
 
@@ -62,7 +67,6 @@ header{
     float: right;
     width: 189.62px;
     height: 278px;
-    background-image: linear-gradient(pink);
 }
 
 .sign-up{
@@ -76,10 +80,9 @@ header{
 .upsell{
     background-image: url(assets/background.svg);
     padding: 50px 32px 20px 32px;
-    margin: 50px 0 10px 0;
+    margin: 50px -32px 10px -32px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto 0;
 }
 
 .press{
@@ -183,7 +186,12 @@ header{
 .right-footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.rfooter-about-box, .rfooter-nft-box, .rfooter-contact-box, .rfooter-social-box{
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -192,7 +200,7 @@ header{
     margin: 30px 0;
 }
 
-.boootom-right-footer{
+.bottom-right-footer{
     display: none;
 }
 
@@ -204,6 +212,7 @@ header{
 
     body{
         margin: 80px;
+        margin-bottom: 0;
     }
 
     .menu-link{
@@ -242,15 +251,15 @@ header{
         }
 
     .graphic-img{
-        height: 519px;
-        width: 328px;
+        width: 554px;
+        height: 719px;
         margin: 0 50px;
     }
 
     .sign-up{
         width: 188px;
         height: 75px;
-        margin-top: 20px;
+        margin: 20px 0 50px 0;
     }
 
     .upsell{
@@ -320,9 +329,26 @@ header{
         margin-top: 50px;
     }
 
-    .boootom-right-footer{
-        margin-top: 30px;
+    .bottom-right-footer{
+        margin: 30px 0 0 0;
         display: inline;
         color: $color-mild-grey;
+        text-align: right;
+    }
+
+    .right-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .rfooter-about-box, .rfooter-nft-box, .rfooter-contact-box, .rfooter-social-box{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .bottom-footer{
+        margin: 30px 0 0 0;
     }
 }
